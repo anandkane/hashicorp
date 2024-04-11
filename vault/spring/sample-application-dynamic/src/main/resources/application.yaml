@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: sample-application
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+#    username: postgres
+#    password: portgres
+  cloud:
+    vault:
+      authentication: token
+      ssl:
+        trust-store: classpath:/vault.jks
+        trust-store-password: changeit
+      token: 
+      uri: https://localhost:8200
+
+      database:
+        enabled: true
+        role: mes-select-all-tables
+#        role: mes-all-on-all-tables
+  config:
+    import: vault://
+
+logging:
+  level:
+    root: info
+    org:
+      springframework:
+        vault: debug

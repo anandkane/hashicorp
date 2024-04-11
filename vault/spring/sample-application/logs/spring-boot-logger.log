@@ -1,0 +1,26 @@
+2024-03-11 15:45:01,490 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-03-11 15:45:01,623 INFO o.s.b.l.DeferredLog [main] Vault location [kv/application::development] not resolvable: Not found
+2024-03-11 15:45:01,624 INFO o.s.b.l.DeferredLog [main] Vault location [kv/application] not resolvable: Not found
+2024-03-11 15:45:02,629 INFO o.s.c.b.c.PropertySourceBootstrapConfiguration [main] Located property source: [BootstrapPropertySource {name='bootstrapProperties-kv/sample-application::development'}, BootstrapPropertySource {name='bootstrapProperties-kv/sample-application'}, BootstrapPropertySource {name='bootstrapProperties-kv/application::development'}, BootstrapPropertySource {name='bootstrapProperties-kv/application'}]
+2024-03-11 15:45:02,663 INFO o.s.b.SpringApplication [main] The following 1 profile is active: "development"
+2024-03-11 15:45:02,691 INFO o.s.b.l.DeferredLog [main] Vault location [kv/application::development] not resolvable: Not found
+2024-03-11 15:45:02,692 INFO o.s.b.l.DeferredLog [main] Vault location [kv/application] not resolvable: Not found
+2024-03-11 15:45:02,692 INFO o.s.b.l.DeferredLog [main] Vault location [kv/application::development] not resolvable: Not found
+2024-03-11 15:45:02,692 INFO o.s.b.l.DeferredLog [main] Vault location [kv/application] not resolvable: Not found
+2024-03-11 15:45:03,392 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-03-11 15:45:03,406 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 8 ms. Found 0 JDBC repository interfaces.
+2024-03-11 15:45:03,572 INFO o.s.c.c.s.GenericScope [main] BeanFactory id=9b6dda4b-afaa-3369-9277-66f5b75e7171
+2024-03-11 15:45:03,943 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2024-03-11 15:45:03,950 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2024-03-11 15:45:03,951 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2024-03-11 15:45:03,952 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-11 15:45:04,032 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-03-11 15:45:04,033 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1340 ms
+2024-03-11 15:45:04,526 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-03-11 15:45:04,598 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@18463720
+2024-03-11 15:45:04,600 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-03-11 15:45:04,868 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2024-03-11 15:45:04,891 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2024-03-11 15:45:04,916 INFO o.s.b.StartupInfoLogger [main] Started SampleApplication in 5.321 seconds (process running for 6.277)
+2024-03-11 15:45:06,948 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-03-11 15:45:06,953 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.

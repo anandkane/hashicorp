@@ -1,0 +1,41 @@
+spring:
+  application:
+    name: sample-application
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+#    username: postgres
+#    password: portgres
+  cloud:
+    consul:
+      config:
+        format: YAML
+        enabled: true
+        defaultContext: apps
+        profileSeparator: '::'
+        prefixes: config/yaml
+    vault:
+      fail-fast: false
+      uri: https://localhost:8200
+      ssl:
+        trust-store: classpath:/vault.jks
+        trust-store-password: changeit
+      authentication: token
+      token: ${VAULT_TOKEN}
+      kv:
+        application-name: sample-application
+        backend: kv
+        enabled: true
+        profile-separator: "::"
+  config:
+    import: vault://
+
+logging:
+  pattern:
+    console: "%black(%d{ISO8601}) %highlight(%-5level) [%blue(%t)] %red(%c).%M:%line - %msg%n%throwable"
+  level:
+    root: info
+    org:
+      springframework:
+        vault: info
+#        cloud: debug
+#          consul: debug
